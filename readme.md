@@ -8,18 +8,14 @@ findWebshell是一款基于python开发的webshell检查工具，可以检查任
     Options:
       -h, --help            show this help message and exit
       -p PATH, --path=PATH  input web directory filepath
-      -o OUTPUT, --output=OUTPUT
-                            create a html report
       -e php|asp|aspx|jsp|all, --ext=php|asp|aspx|jsp|all
                             define what's file format to scan
 
 示例
     
-    python main.py -e php -p /var/www/test -o output
+    python main.py -e php -p /var/www/test
     -e 网页格式
     -p 扫描的路径
-    -o 生成的html文件名，默认生成report.html
-
 ##开发文档
 ###字典添加
 - directory目录下的sensitiveWord.py定义的是后门中的敏感关键字，可以手动添加，格式为{"关键字":"类型"}
